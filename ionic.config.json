@@ -1,0 +1,7 @@
+{
+  "name": "Breazy",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
