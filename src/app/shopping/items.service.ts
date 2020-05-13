@@ -132,4 +132,8 @@ export class ItemsService {
   getCategoryItems(id: string) {
     return this._items.filter(items => items.category === id);
   }
+
+  getItem(id: string) {
+    return this._items.find(i => i.id === id);
+  }
 }

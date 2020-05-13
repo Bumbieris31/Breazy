@@ -22,6 +22,10 @@ const routes: Routes = [
           {
             path: ':shopId',
             loadChildren: () => import('./offers/shop-offers/shop-offers.module').then(m => m.ShopOffersPageModule)
+          },
+          {
+            path: 'item/:itemId',
+            loadChildren: () => import('./offers/item/item.module').then(m => m.ItemPageModule)
           }
         ]
       },

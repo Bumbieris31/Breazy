@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/shopping/tabs/offers"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ item.name }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-img [src]="item.imageUrl"></ion-img>
+          <ion-text>
+            <h1>
+              {{ item.description }}
+            </h1>
+          </ion-text>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
